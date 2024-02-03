@@ -1,11 +1,29 @@
 <template>
-    <div class="bg-[#FEFAE0] h-screen flex flex-col">
-      <LayoutNavbar></LayoutNavbar>
-      <div class="">
-        <slot />
-      </div>
-      <div class="mt-auto">
-        <LayoutFooter></LayoutFooter>
-      </div>
+  <div class="flex flex-col " :class="{'h-screen': route.path === '/' || route.name === 'productlist-id' }" >
+    <LayoutNavbar></LayoutNavbar>
+    <div class="flex h-full">
+      <slot />
     </div>
-  </template>
+    <div class="mt-auto">
+      <LayoutFooter></LayoutFooter>
+    </div>
+  </div>
+</template>
+
+<script setup>
+
+const route = useRoute()
+
+
+</script>
+
+<style>
+
+body {
+  height: 100vh;
+  @apply bg-[#FEFAE0];
+  box-sizing: border-box;
+}
+
+
+</style>
