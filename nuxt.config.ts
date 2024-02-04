@@ -8,4 +8,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: [
+    '@element-plus/nuxt'
+  ],
+  elementPlus: { /** Options */ }
 })
