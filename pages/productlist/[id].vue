@@ -154,7 +154,7 @@ const list = {
       ],
     },
   },
-  cutlets: {
+  roti: {
     image: "/_nuxt/assets/pictures/roti.jpg",
     options: ["Vegetable", "Fish", "Chicken"],
     baseQuantity: 5,
