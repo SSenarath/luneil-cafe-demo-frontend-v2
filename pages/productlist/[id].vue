@@ -1,6 +1,9 @@
 <template>
-  <div class="flex justify-center w-full flex-col items-center gap-10 py-10">
-    <p class="text-4xl font-bold text-center w-full">{{ title }}</p>
+  <div class="flex justify-center w-full flex-col items-center py-10">
+    <NuxtLink to="/productlist" class="ml-auto mr-4">
+      <el-button >Back to Product List</el-button>
+    </NuxtLink>
+    <p class="text-4xl font-bold text-center w-full mb-10">{{ title }}</p>
     <ContentProductingredientcard :item="item"></ContentProductingredientcard>
   </div>
 </template>
