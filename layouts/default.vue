@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col " :class="{'h-screen': route.path === '/' || route.name === 'productlist-id' }" >
+  <div class="flex flex-col " :class="{'h-screen': route.path === '/' }" >
     <LayoutNavbar></LayoutNavbar>
     <div class="flex h-full">
       <slot />
