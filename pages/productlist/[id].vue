@@ -13,7 +13,7 @@ const input = ref();
 
 const list = {
   rolls: {
-    image: "@/assets/pictures/rolls.jpg",
+    image: "/pictures/rolls.jpg",
     options: ["Vegetable", "Fish"],
     baseQuantity: 30,
     baseQuantityUnit: "items",
@@ -43,7 +43,7 @@ const list = {
     },
   },
   pastries: {
-    image: "@/assets/pictures/pastries.jpg",
+    image: "/pictures/pastries.jpg",
     options: ["Chicken", "Fish"],
     baseQuantity: 20,
     baseQuantityUnit: "items",
@@ -73,7 +73,7 @@ const list = {
     },
   },
   patties: {
-    image: "@/assets/pictures/patties.jpg",
+    image: "/pictures/patties.jpg",
     options: ["Cheese", "Chicken", "Fish"],
     baseQuantity: 15,
     baseQuantityUnit: "items",
@@ -114,7 +114,7 @@ const list = {
     },
   },
   cutlets: {
-    image: "@/assets/pictures/cutlets.jpg",
+    image: "/pictures/cutlets.jpg",
     options: ["Cheese", "Chicken", "Fish"],
     baseQuantity: 15,
     baseQuantityUnit: "items",
@@ -155,7 +155,7 @@ const list = {
     },
   },
   roti: {
-    image: "@/assets/pictures/roti.jpg",
+    image: "/pictures/roti.jpg",
     options: ["Vegetable", "Fish", "Chicken"],
     baseQuantity: 5,
     baseQuantityUnit: "items",
@@ -196,7 +196,7 @@ const list = {
     },
   },
   hoppers: {
-    image: "@/assets/pictures/hoppers.jpg",
+    image: "/pictures/hoppers.jpg",
     options: ["noOptions"],
     baseQuantity: 5,
     baseQuantityUnit: "items",
@@ -215,7 +215,7 @@ const list = {
     },
   },
   "lunu-miris": {
-    image: "@/assets/pictures/lunu-miris.jpg",
+    image: "pictures/lunu-miris.jpg",
     options: ["noOptions"],
     baseQuantity: 300,
     baseQuantityUnit: "g",
@@ -234,7 +234,7 @@ const list = {
     },
   },
   "seeni-sambal": {
-    image: "@/assets/pictures/seeni-sambal.jpg",
+    image: "/pictures/seeni-sambal.jpg",
     options: ["noOptions"],
     baseQuantity: 300,
     baseQuantityUnit: "g",
@@ -253,7 +253,7 @@ const list = {
     },
   },
   "coconut-sambal": {
-    image: "@/assets/pictures/coconut-sambal.jpg",
+    image: "/pictures/coconut-sambal.jpg",
     options: ["noOptions"],
     baseQuantity: 250,
     baseQuantityUnit: "g",

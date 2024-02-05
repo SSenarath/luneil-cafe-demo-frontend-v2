@@ -16,47 +16,47 @@
 const productList = [
   {
     name: "Rolls",
-    image: "public/pictures/rolls.jpg",
+    image: "/pictures/rolls.jpg",
     url: "/productlist/rolls",
   },
   {
     name: "Pastries",
-    image: "public/pictures/pastries.jpg",
+    image: "/pictures/pastries.jpg",
     url: "/productlist/pastries",
   },
   {
     name: "Patties",
-    image: "public/pictures/patties.jpg",
+    image: "/pictures/patties.jpg",
     url: "/productlist/patties",
   },
   {
     name: "Cutlets",
-    image: "public/pictures/cutlets.jpg",
+    image: "/pictures/cutlets.jpg",
     url: "/productlist/cutlets",
   },
   {
     name: "Roti",
-    image: "public/pictures/roti.jpg",
+    image: "/pictures/roti.jpg",
     url: "/productlist/roti",
   },
   {
     name: "Hoppers",
-    image: "public/pictures/hoppers.jpg",
+    image: "/pictures/hoppers.jpg",
     url: "/productlist/hoppers",
   },
   {
     name: "Lunu Miris",
-    image: "public/pictures/lunu-miris.jpg",
+    image: "/pictures/lunu-miris.jpg",
     url: "/productlist/lunu-miris",
   },
   {
     name: "Seeni Sambal",
-    image: "public/pictures/seeni-sambal.jpg",
+    image: "/pictures/seeni-sambal.jpg",
     url: "/productlist/seeni-sambal",
   },
   {
     name: "Coconut Sambal",
-    image: "public/pictures/coconut-sambal.jpg",
+    image: "/pictures/coconut-sambal.jpg",
     url: "/productlist/coconut-sambal",
   },
 ];
