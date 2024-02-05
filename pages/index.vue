@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mx-auto items-center relative">
+  <div class="flex mx-auto items-center relative top-[120px]">
     <img
       src="assets/pictures/banner.jpg"
       class="opacity-50 rounded-lg absolute scale-[1]"
@@ -22,9 +22,11 @@
             Log an Order
           </button>
         </NuxtLink>
-        <button class="bg-luneil-yellow px-2 py-1 rounded-md">
+        <NuxtLink to="/orderhistory">
+          <button class="bg-luneil-yellow px-2 py-1 rounded-md">
           View Existing Orders
         </button>
+        </NuxtLink>
       </div>
     </div>
   </div>

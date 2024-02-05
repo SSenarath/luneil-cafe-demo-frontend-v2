@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full border">
+  <div class="flex flex-col w-full">
     <p class="text-4xl font-bold text-center mt-4">Product List</p>
     <div class="my-5 justify-center flex gap-20 flex-row flex-wrap">
       <ContentProductcard

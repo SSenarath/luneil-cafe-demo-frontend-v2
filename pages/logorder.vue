@@ -1,6 +1,9 @@
 <template>
-  <div class="flex justify-center w-full flex-col items-center gap-10 py-10">
-    <p class="text-4xl font-bold text-center w-full">Log an Order</p>
+  <div class="flex w-full flex-col items-center py-10">
+    <NuxtLink to="/orderhistory" class="ml-auto mr-4">
+      <el-button >See Order History</el-button>
+    </NuxtLink>
+    <p class="text-4xl font-bold text-center w-full mb-10">Log an Order</p>
     <div class="border bg-luneil-orange bg-opacity-50 rounded-lg flex p-4">
       <div>
         <el-form :model="form" label-width="120px">
@@ -12,6 +15,7 @@
               <el-date-picker
                 v-model="form.date1"
                 type="date"
+                value-format="YYYY-MM-DD"
                 placeholder="Pick a date"
                 style="width: 100%"
               />
@@ -23,12 +27,13 @@
               <el-time-picker
                 v-model="form.date2"
                 placeholder="Pick a time"
+                value-format="HH:mm"
                 style="width: 100%"
               />
             </el-col>
           </el-form-item>
           <el-form-item label="Items">
-            <div class="flex flex-col borders">
+            <div class="flex flex-col">
               <ul
                 class="list-disc ml-4"
                 v-if="itemsList.length > 0"
@@ -44,6 +49,7 @@
               <div class="flex gap-2 items-center">
                 <el-input
                   v-model="itemPreview.quantity"
+                  min="1"
                   type="number"
                   class="!w-20"
                 />
@@ -81,12 +87,22 @@
                     />
                   </el-select>
                 </div>
-                <el-button @click="addToList">Add</el-button>
+                <el-button
+                  @click="addToList"
+                  :class="{
+                    'is-disabled':
+                      !itemPreview.quantity ||
+                      !itemPreview.type ||
+                      (optionsList[itemPreview.type][0] !== 'noOptions' &&
+                        !itemPreview.option),
+                  }"
+                  >Add</el-button
+                >
               </div>
             </div>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="onSubmit">Create</el-button>
+            <el-button type="primary" @click="onSubmit" :class="{'is-disabled': !form.name || !form.date1 || !form.date2 || itemsList.length < 1}">Create</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -96,9 +112,9 @@
 
 <script setup>
 import { ArrowDown } from "@element-plus/icons-vue";
-import {storeToRefs} from 'pinia';
-import useOrdersStore from '~/stores/orders'
-const orderStore = useOrdersStore()
+import { storeToRefs } from "pinia";
+import { useOrdersStore } from "~/stores/OrderStore";
+const orderStore = useOrdersStore();
 const form = reactive({
   name: "",
   date1: "",
@@ -160,6 +176,21 @@ const addToList = () => {
 
 const deleteItem = (index) => {
   itemsList.value.splice(index, 1);
+};
+
+const onSubmit = () => {
+  form.items = itemsList.value;
+  const res = orderStore.addOrders(form);
+  form.name = "";
+  form.date1 = "";
+  form.date2 = "";
+  form.items = [];
+  itemsList.value = [];
+  itemPreview.value = {
+    quantity: "",
+    type: "",
+    option: "",
+  };
 };
 </script>
 
