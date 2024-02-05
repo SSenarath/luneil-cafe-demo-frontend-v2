@@ -16,47 +16,47 @@
 const productList = [
   {
     name: "Rolls",
-    image: "/_nuxt/assets/pictures/rolls.jpg",
+    image: "@/assets/pictures/rolls.jpg",
     url: "/productlist/rolls",
   },
   {
     name: "Pastries",
-    image: "/_nuxt/assets/pictures/pastries.jpg",
+    image: "@/assets/pictures/pastries.jpg",
     url: "/productlist/pastries",
   },
   {
     name: "Patties",
-    image: "/_nuxt/assets/pictures/patties.jpg",
+    image: "@/assets/pictures/patties.jpg",
     url: "/productlist/patties",
   },
   {
     name: "Cutlets",
-    image: "/_nuxt/assets/pictures/cutlets.jpg",
+    image: "@/assets/pictures/cutlets.jpg",
     url: "/productlist/cutlets",
   },
   {
     name: "Roti",
-    image: "/_nuxt/assets/pictures/roti.jpg",
+    image: "@/assets/pictures/roti.jpg",
     url: "/productlist/roti",
   },
   {
     name: "Hoppers",
-    image: "/_nuxt/assets/pictures/hoppers.jpg",
+    image: "@/assets/pictures/hoppers.jpg",
     url: "/productlist/hoppers",
   },
   {
     name: "Lunu Miris",
-    image: "/_nuxt/assets/pictures/lunu-miris.jpg",
+    image: "@/assets/pictures/lunu-miris.jpg",
     url: "/productlist/lunu-miris",
   },
   {
     name: "Seeni Sambal",
-    image: "/_nuxt/assets/pictures/seeni-sambal.jpg",
+    image: "@/assets/pictures/seeni-sambal.jpg",
     url: "/productlist/seeni-sambal",
   },
   {
     name: "Coconut Sambal",
-    image: "/_nuxt/assets/pictures/coconut-sambal.jpg",
+    image: "@/assets/pictures/coconut-sambal.jpg",
     url: "/productlist/coconut-sambal",
   },
 ];
