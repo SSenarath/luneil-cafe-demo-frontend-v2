@@ -15,7 +15,7 @@ At the beginning of my coding journey, I developed a restaurant management app w
 * [Author](#author)
 
 ## Demo
-* Live Site URL: [https://main--luneil-cafe-management-app.netlify.app/]([https://luneil-cafe-demo.up.railway.app/](https://main--luneil-cafe-management-app.netlify.app/)
+* Live Site URL: [https://main--luneil-cafe-management-app.netlify.app/](https://main--luneil-cafe-management-app.netlify.app/)
 
 ## Technologies
 **Built with:**
