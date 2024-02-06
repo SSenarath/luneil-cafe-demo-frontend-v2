@@ -2,6 +2,8 @@
 
 At the beginning of my coding journey, I developed a restaurant management app with my sister using Node.js that can process orders, track order history and store product details to fulfill the business need of my mom’s small catering business. Back then, lacking experience in front-end frameworks, the code wasn't as streamlined as I would have preferred. Recently, I started re-creating the application using my experience with Nuxt, Element UI and Tailwind CSS.  While the application remains a work in progress, you can explore the current status below. Please note that the demo version excludes real ingredient information (family secrets, you know!)
 
+* Repo of first version of project: [https://github.com/SSenarath/luneil-cafe-demo](https://github.com/SSenarath/luneil-cafe-demo)
+
 ## Table of Contents
 * [Demo](#demo)
 * [Technologies](#technologies)
@@ -13,7 +15,7 @@ At the beginning of my coding journey, I developed a restaurant management app w
 * [Author](#author)
 
 ## Demo
-* Live Site URL: [https://main--luneil-cafe-management-app.netlify.app/]([https://luneil-cafe-demo.up.railway.app/](https://main--luneil-cafe-management-app.netlify.app/))
+* Live Site URL: [https://main--luneil-cafe-management-app.netlify.app/]([https://luneil-cafe-demo.up.railway.app/](https://main--luneil-cafe-management-app.netlify.app/)
 
 ## Technologies
 **Built with:**
