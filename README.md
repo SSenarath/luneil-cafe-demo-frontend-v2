@@ -1,75 +1,61 @@
-# Nuxt 3 Minimal Starter
+# Restaurant Management App for Luneil Cafe
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+At the beginning of my coding journey, I developed a restaurant management app with my sister using Node.js that can process orders, track order history and store product details to fulfill the business need of my mom’s small catering business. Back then, lacking experience in front-end frameworks, the code wasn't as streamlined as I would have preferred. Recently, I started re-creating the application using my experience with Nuxt, Element UI and Tailwind CSS.  While the application remains a work in progress, you can explore the current status below. Please note that the demo version excludes real ingredient information (family secrets, you know!)
 
-## Setup
+## Table of Contents
+* [Demo](#demo)
+* [Technologies](#technologies)
+* [Overview](#overview)
+    * [Requirements](#requirements)
+    * [Screenshots](#screenshots)
+* [Next Steps](#next-steps)
+* [Useful Resources](#useful-resources)
+* [Author](#author)
 
-Make sure to install the dependencies:
+## Demo
+* Live Site URL: [https://main--luneil-cafe-management-app.netlify.app/]([https://luneil-cafe-demo.up.railway.app/](https://main--luneil-cafe-management-app.netlify.app/))
 
-```bash
-# npm
-npm install
+## Technologies
+**Built with:**
+* Nuxt
+* Element-UI
+* Pinia
+* Tailwind CSS
+* JavaScript
+	
+## Overview
+### Requirements
 
-# pnpm
-pnpm install
+- [x] Allow user to view ingredient list for each product and calculate the required ingredients based on user defined quantities.
+- [x] Allow user to input new orders and have the application store them in a database. 
+- [x] Allow user to view order history. 
 
-# yarn
-yarn install
+### Screenshots of Current Progress 
 
-# bun
-bun install
-```
+**Demo of Product Details Feature**
 
-## Development Server
+Demo to be recorded...
 
-Start the development server on `http://localhost:3000`:
+**Demo of Order Form Feature**
 
-```bash
-# npm
-npm run dev
+Demo to be recorded...
 
-# pnpm
-pnpm run dev
+**Demo of Order History Feature**
 
-# yarn
-yarn dev
+Demo to be recorded...
 
-# bun
-bun run dev
-```
+## Next Steps
 
-## Production
+- [x] Create a DB to store product details and order details
+- [x] Create an API to retrieve / send information to DB
+- [x] Improve usability of order history page (seperate past orders from upcoming orders)
+- [x] Improve usability of nav bar, add page navigation
+- [x] Make website responsive 
 
-Build the application for production:
+## Authors
 
-```bash
-# npm
-npm run build
+### Sanduni Senerath
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+* Portfolio Website - [Sanduni Senarath](https://ssenarath.github.io/portfolio-website/)
+* LinkedIn - [www.linkedin.com/in/ssenarath](https://www.linkedin.com/in/ssenarath)
+* Github - [@ssenarath](https://github.com/SSenarath)
